@@ -1,0 +1,34 @@
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: black;
+  opacity: 0.9;
+}
+.nav-wrapper > .nav-links-wrapper {
+  height: 100%;
+}
+.nav-wrapper > .nav-links-wrapper > .nav-label,
+.nav-wrapper > .nav-search {
+  display: inline-block;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.nav-wrapper > .nav-search {
+  height: 100%;
+  width: 30px;
+  text-align: center;
+}
+.nav-wrapper > .nav-search:hover {
+  background-color: lime;
+  border-radius: 10px;
+}
+.nav-wrapper > .nav-links-wrapper > .nav-label:hover {
+  background-color: lime;
+  border-radius: 10px;
+}

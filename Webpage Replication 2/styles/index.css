@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+}
+.container {
+  width: 100%;
+  height: 100%;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  color: white;
+  background-color: rgba(29, 41, 68, 0.6);
+  padding: 20px 0;
+  position: fixed;
+  width: 100%;
+}
+.hero-container {
+  background-image: url("../images/plane-video.webp");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 50rem;
+  width: 100%;
+}
+.hero-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.section3-container {
+  background-image: url("../images/men.webp");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 40rem;
+  width: 100%;
+}
+.section3-text {
+  color: white;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding: 200px;
+  font-size: 30px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}

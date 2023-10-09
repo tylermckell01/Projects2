@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/media-queries.css">
+    
+    <title>Reservation Site</title>
+  </head>
+  <body>
+    <div class="header" align="center">
+      <h1>
+        <a href="../pages/main.html">
+          <i class="fa-solid fa-house"></i> 
+            <br>
+        </a>
+          Awesome Vacation Webform Reserver
+      </h1>
+    </div>
+    <br>
+      <h2>Please fill out the info below: </h2>
+    <form>
+      <div class="text-inputs">
+        <label for="first-name">First Name: </label>
+        <input type="text" name="first_name" id="first-name" />
+        <br />
+        <label for="last-name">Last-name: </label>
+        <input type="text" name="last-name" id="last-name" />
+        <br>
+        <label for="email">Email: </label>
+        <input type="text" name="email" id="email" />
+        <br>
+        <label for="phone-number">Phone-number: </label>
+        <input type="text" name="phone-number" id="phone-number" />
+
+      </div>
+      <div class="date"
+        <label for="date">Start Date: </label>
+        <input type="date" name="date" min="2023-09-20" >
+        <br>
+        <label for="date">End Date: </label>
+        <input type="date" name="date" min="2023-09-21">
+      </div>
+      <br>
+      <div class="radio-buttons">
+        <h3>Hotel Options (select one):</h3>
+        <label for="option1">4 seasons </label>
+        <input type="radio" id="option1" name="options"/>
+        <br>
+        <label for="option2">5 seasons </label>
+        <input type="radio" id="option2" name="options"/>
+        <br>
+        <label for="option3">Marriott</label>
+        <input type="radio" id="option3" name="options"/>
+      </div>
+        <br>
+      <div class="checkbox-buttons">
+        <h3>Extra hotel accomodations:</h3>
+        <label for="option4">Soap</label>
+        <input type="checkbox" id="option4" name="options"/>
+        <br>
+        <label for="option5">Loufa</label>
+        <input type="checkbox" id="option5" name="options"/>
+        <br>
+        <label for="option6">Shampoo & Conditioner</label>
+        <input type="checkbox" id="option7" name="options"/>
+      </div>
+        <br>
+      <div class="submit-button">
+        <button>confirm</button>
+      </div>
+
+      <br>
+      <div class="dropdown">
+        <h3>Rental Car Options:</h3>
+        <select>
+          <option selected disabled>Select Options</option>
+          <option value="Option1">None</option>
+          <option value="Option2">RentalsUSA</option>
+          <option value="Option3">CarsRus</option>
+          <option value="Option4">HotrodRentals</option>
+        </select>
+      </div>
+      <br>
+      <div class="text_area">
+        <h2>How else can we take care of you?</h2>
+        <textarea 
+        name="text_area"
+        id="textarea"
+        placeholder="I would like..." 
+        rows="5" 
+        cols="50"></textarea>
+        <label for="textarea"></label>
+      </div>
+      <br>
+      <div class="submit-button" style="width: 200px; height: 100px; font-size: 20px;">
+        <button>Book My Reservation Now!</button>
+      </div>
+
+    </form>
+      <br>
+      <br>
+    <div class="footer" align="center">
+      <footer>
+      <h2>Contact us:</h2>
+      <h3>555-5555</h3>
+      <h3>123 awesome vacation ln</h3>
+      </footer>
+    </div>
+    </div>
+  </body>
+</html>
