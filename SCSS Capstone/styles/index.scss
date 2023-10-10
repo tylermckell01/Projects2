@@ -9,7 +9,7 @@
 
   .header-container {
     width: 100%;
-    height: 7%;
+    height: 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -73,7 +73,7 @@
 
   .background-image {
     width: 100%;
-    height: 83%;
+    height: 1000px;
     background-image: url("https://source.unsplash.com/random/america");
     background-size: cover;
     background-repeat: no-repeat;
@@ -82,7 +82,7 @@
 
   .hero-container {
     // i will do negative margins here after styling
-    margin-top: -600px;
+    margin-top: -700px;
     width: 100%;
     height: 350px;
     // border: 1px solid lime;
@@ -127,8 +127,8 @@
     flex-direction: column;
     align-items: center;
     // justify-content: space-between;
-    margin: 180px 15px 0px;
-    padding: 30px;
+    margin: 280px 15px 0px;
+    padding: 30px 0px;
     background-color: white;
     border-radius: 5px;
 
@@ -138,7 +138,7 @@
       padding: 10px;
       font-size: 250%;
       color: $blueheadercolor;
-      border: 1px solid orange;
+      // border: 1px solid orange;
     }
 
     .stand-for-container {
@@ -149,7 +149,7 @@
       height: 300px;
       // padding: 40px 0px;
       margin: 50px 0px;
-      border: 1px solid blueviolet;
+      // border: 1px solid blueviolet;
 
       .column-content-wrapper {
         display: flex;
@@ -201,23 +201,56 @@
     .about-hestia-wrapper {
       display: flex;
       align-items: center;
+      justify-content: space-between;
       width: 100%;
-      height: 500px;
+      height: 285px;
       margin: 75px 0px;
-      border: 1px solid lime;
+      // border: 1px solid lime;
+      color: white;
 
-      .hestia-left {
-        width: 50%;
-        // height: 500px;
-        // display: flex;
-        // flex-direction: column;
-        // justify-content: space-around;
-        padding-left: 5%;
-      }
+      .about-hestia-background-image {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        background-image: url("../images/city.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
 
-      .about-hestia-image {
-        width: 50%;
-        // @include flex-center;
+        .hestia-left {
+          width: 50%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          gap: 25px;
+          padding-left: 5%;
+
+          .about-hestia-title {
+            font-size: 250%;
+            font-weight: 500;
+          }
+
+          .about-hestia-words {
+            font-size: 125%;
+          }
+        }
+
+        .hestia-right {
+          width: 50%;
+          height: 100%;
+          @include flex-center;
+
+          .about-hestia-image {
+            width: 400px;
+            height: 285px;
+            @include flex-center;
+            background-image: url("../images/about-content.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+          }
+        }
       }
     }
 
@@ -226,44 +259,79 @@
       width: 900px;
       height: 300px;
       margin: 75px 0px;
-      border: 1px solid purple;
+      // border: 1px solid purple;
 
       .uncategorized-content-wrapper {
         // height: 100%;
+        width: 33%;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        gap: 20px;
         padding: 10px;
+
+        .uncategorized-title1 {
+          color: #973da7;
+        }
+
+        .uncategorized-title2 {
+          color: #01bcd4;
+        }
+
+        .uncategorized-title3 {
+          color: #f5544a;
+        }
+
+        .uncategorized-content-bold {
+          font-size: 18px;
+          color: $darkerblue;
+          font-weight: 800;
+        }
+
+        .uncategorized-content-words {
+          color: $textgrey;
+        }
       }
     }
 
     .get-in-touch-container {
       width: 100%;
-      height: 500px;
-      padding: 100px 10px 60px;
-      padding: 0px 10px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      align-items: flex-start;
-      border: 1px solid blue;
-      // color: white;
+      height: 400px;
+      padding: 0px 0px 10px;
+      // border: 1px solid blue;
+      color: white;
 
-      .get-in-touch-title {
-        font-size: 35px;
-      }
+      .get-in-touch-background-image {
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        background-image: url("../images/city.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
 
-      .get-in-touch-heading {
-        font-size: 20px;
-
-        i {
+        .get-in-touch-title {
           font-size: 35px;
+          padding-left: 40px;
+          justify-self: flex-start;
         }
-      }
 
-      .get-in-touch-words {
-        color: $textgrey;
-        padding-left: 20px;
+        .get-in-touch-heading {
+          font-size: 20px;
+          padding-left: 40px;
+
+          i {
+            font-size: 35px;
+          }
+        }
+
+        .get-in-touch-words {
+          // color: $textgrey;
+          margin-top: -40px;
+          padding-left: 70px;
+        }
       }
     }
   }
@@ -274,16 +342,14 @@
     align-items: center;
     padding: 0px 5%;
     height: 100px;
-    font-size: 14px;
+    font-size: 13px;
     background-color: $footercolor;
     color: white;
 
     .left-footer {
-      width: 15%;
+      width: 20%;
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
     }
   }
 }
-
-// hello
