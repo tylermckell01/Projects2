@@ -20,3 +20,12 @@
   color: $blurredpink;
   box-shadow: 0 4px 5px 4px $blurredpink;
 }
+
+@mixin container-row-to-column {
+  width: 100%;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
