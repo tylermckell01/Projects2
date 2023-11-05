@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+.container .grid .first {
+  background-color: #34af7f;
+}
+.container .grid .second {
+  background-color: #a37e43;
+}
+.container .grid .third {
+  background-color: #56abcd;
+}/*# sourceMappingURL=index.css.map */
