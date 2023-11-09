@@ -1,0 +1,60 @@
+body,
+.page-container {
+  width: 100%;
+  height: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  border: 5px solid purple;
+  margin: 10px 10px;
+}
+
+.main-content-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+
+  .pending-tasks-container {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border: 2px solid red;
+
+    ul {
+      li {
+        margin-top: 10px;
+      }
+    }
+
+    .pending-tasks-container-header {
+      font-size: x-large;
+    }
+
+    .submit-new-task-btn {
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+    }
+  }
+
+  .completed-tasks-container {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border: 2px solid green;
+
+    .completed-tasks-container-header {
+      font-size: x-large;
+    }
+
+    ul {
+      li {
+        margin-top: 10px;
+      }
+    }
+  }
+}

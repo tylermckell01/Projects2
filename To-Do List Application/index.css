@@ -1,0 +1,49 @@
+body,
+.page-container {
+  width: 100%;
+  height: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  border: 5px solid purple;
+  margin: 10px 10px;
+}
+
+.main-content-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+.main-content-container .pending-tasks-container {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  border: 2px solid red;
+}
+.main-content-container .pending-tasks-container ul li {
+  margin-top: 10px;
+}
+.main-content-container .pending-tasks-container .pending-tasks-container-header {
+  font-size: x-large;
+}
+.main-content-container .pending-tasks-container .submit-new-task-btn {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+.main-content-container .completed-tasks-container {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  border: 2px solid green;
+}
+.main-content-container .completed-tasks-container .completed-tasks-container-header {
+  font-size: x-large;
+}
+.main-content-container .completed-tasks-container ul li {
+  margin-top: 10px;
+}/*# sourceMappingURL=index.css.map */
