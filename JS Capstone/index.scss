@@ -1,0 +1,95 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: gray;
+
+  .header-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+    font-size: 40px;
+    color: navajowhite;
+  }
+
+  .main-content-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+
+  .side-bar-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 30%;
+    background-color: plum;
+    border-radius: 10px;
+
+    .names-title {
+      padding: 10px 30px;
+      font-size: 40px;
+      color: rgb(238, 216, 216);
+      font-family: "Trirong", serif;
+    }
+
+    .names-list-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: large;
+      height: 70%;
+
+      div {
+        margin: 10px 0px;
+        font-size: larger;
+      }
+    }
+  }
+
+  .hero-content-container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    background-color: paleturquoise;
+    border-radius: 10px;
+
+    .hero-content-title {
+      align-self: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 90px;
+      width: 300px;
+      font-size: 25px;
+      color: green;
+      margin-bottom: 30px;
+      padding: 10px 30px;
+      border-radius: 10px;
+      background-color: navajowhite;
+    }
+
+    button {
+      align-self: center;
+      width: 150px;
+      height: 50px;
+      background-color: rgb(104, 213, 104);
+      border-radius: 30px;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
