@@ -1,0 +1,101 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 175, 255);
+  color: rgb(235, 169, 169);
+  font-size: 20px;
+}
+
+.atm-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  width: 97vw;
+  background-color: gray;
+  border-radius: 35px;
+
+  button {
+    border: none;
+    background-color: greenyellow;
+    color: white;
+    border-radius: 5px;
+    font-size: 20px;
+    height: 50px;
+    width: 60%;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .submit-button {
+    height: 23px;
+    margin-left: 5px;
+    // margin-top: 5px;
+  }
+
+  input {
+    border-radius: 5px;
+    border: 1px solid gray;
+    height: 25px;
+  }
+
+  h1 {
+    padding: 5px 10px;
+  }
+
+  .screen-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 300px;
+    width: 100%;
+
+    .withdraw-wrapper {
+      .info-wrapper {
+        h3 {
+          color: green;
+        }
+      }
+    }
+
+    .deposit-wrapper {
+      .info-wrapper {
+        h3 {
+          color: rgb(17, 92, 255);
+        }
+      }
+    }
+  }
+
+  .info-wrapper {
+    display: flex;
+    // flex-direction: column;
+    align-items: center;
+  }
+
+  .balance-value {
+    color: gold;
+  }
+
+  // .btn {
+  //   height: 50px;
+  //   width: 60%;
+  // }
+}
+
+a {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  text-decoration: none;
+}
+.goodbye-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
